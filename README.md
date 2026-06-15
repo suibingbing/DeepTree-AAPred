@@ -13,6 +13,10 @@ Code and datasets for **DeepTree-AAPred: Binary tree-based deep learning model f
 
 DeepTree-AAPred predicts anti-angiogenic peptides (AAPs) using a binary tree-style feature extraction model. The model combines protein language model representations from ProtBERT and ESM with BiLSTM and TextCNN branches, then fuses the extracted features for binary classification.
 
+![DeepTree-AAPred overview](assets/deeptree_aapred_overview.jpg)
+
+Figure source: Zhang et al., "DeepTree-AAPred: Binary tree-based deep learning model for anti-angiogenic peptides prediction," Journal of Molecular Graphics and Modelling, 2025.
+
 ## Repository Contents
 
 - `tree.py`: main independent-test training script for the curated AAP dataset.
