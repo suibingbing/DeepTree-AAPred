@@ -200,8 +200,8 @@ class MyModel(nn.Module):
         x=output_cnn_pro+output_cnn_esm+lstm_output_esm+lstm_output_pro
         return x
 
-train_file = 'AAIP_135.csv'  #Read training set
-test_file = 'AAIP_28.csv'  #Read independent test set
+train_file = 'data/aap/AAIP_135.csv'  #Read training set
+test_file = 'data/aap/AAIP_28.csv'  #Read independent test set
 train_dataset = MyDataset(train_file)
 test_dataset = MyDataset(test_file)
 batch_size = 2  #Setting batchsize

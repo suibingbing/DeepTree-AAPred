@@ -17,13 +17,10 @@ DeepTree-AAPred predicts anti-angiogenic peptides (AAPs) using a binary tree-sty
 
 - `tree.py`: main independent-test training script for the curated AAP dataset.
 - `tree-5fold.py`: 5-fold cross-validation training script.
-- `tree-Copy2.py`, `test*.py`: experimental variants and ablation-style scripts.
-- `AAIP_135.csv`, `AAIP_28.csv`: processed 15-residue train/test datasets used by `tree.py`.
-- `aaip_*_ori.csv`, `aaip_*.xlsx`: original/intermediate AAP datasets.
-- `NP_train.csv`, `NP_test.csv`, `Training set.txt`, `Test set.txt`: NeuroPred-related comparison data.
-- `train_300.csv`, `val_300.csv`: longer-sequence training/validation data used by experimental scripts.
-- `esm/`: local ESM source package snapshot used during development.
-- `NeuroPred-ResSE.rar`: comparison/baseline archive retained from the original project folder.
+- `data/aap/AAIP_135.csv`: processed 15-residue training dataset.
+- `data/aap/AAIP_28.csv`: processed 15-residue independent test dataset.
+- `data/aap/original/`: original AAP dataset CSV files before 15-residue preprocessing.
+- `requirements.txt`: Python dependency list.
 
 ## Large Model Files
 
@@ -57,7 +54,7 @@ conda install -c conda-forge rdkit
 
 ## Usage
 
-Prepare local pretrained model directories first, then run:
+Prepare local pretrained model directories first, then run the independent-test experiment:
 
 ```bash
 python tree.py
@@ -69,8 +66,8 @@ For 5-fold cross validation:
 python tree-5fold.py
 ```
 
-The scripts expect to be run from the repository root so relative dataset paths such as `AAIP_135.csv` can be resolved.
+The scripts expect to be run from the repository root so relative dataset paths such as `data/aap/AAIP_135.csv` can be resolved.
 
 ## Notes
 
-This repository preserves the research code structure from the working directory. Some scripts are experimental variants and may require path updates for local pretrained model checkpoints.
+This repository keeps the core training scripts and paper-related AAP datasets. Large pretrained model weights, runtime checkpoints, temporary notebooks, and exploratory scripts are intentionally excluded.
