@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Runtime outputs
+autodl-tmp/
+outputs/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Local pretrained model weights
+/protbert/
+/protbert_bfd/
+/ESM/
+/esm2/
+/models/
+
+# Large model artifacts
+*.bin
+*.h5
+*.safetensors

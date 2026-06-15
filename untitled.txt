@@ -1,0 +1,9 @@
+0.00006 plan A 32 LSTM 1 BEST_AUC: 0.975 ACC: 0.986 MCC: 0.670 specificity: 0.997 sensitivity: 1.000
+
+
+
+
+
+0.00006525 plan B 32 LSTM 1 BEST_AUC: 0.976 ACC: 0.980 MCC: 0.639 specificity: 0.987 sensitivity: 1.000
+
+0.0000661 0.00001 plan B 32 LSTM 1 BEST_AUC: 0.979 ACC: 0.982 MCC: 0.645 specificity: 0.987 sensitivity: 1.000
